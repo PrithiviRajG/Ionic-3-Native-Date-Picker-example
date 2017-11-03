@@ -7,6 +7,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { Keyboard } from '@ionic-native/keyboard';
+import { DatePicker } from '@ionic-native/date-picker';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -24,6 +28,8 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+    Keyboard,
+    DatePicker,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
